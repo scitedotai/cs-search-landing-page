@@ -9,7 +9,7 @@
        <link rel="canonical" href="https://sift.science/">
        <style>
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-        </style> 
+        </style>
        <link rel="stylesheet" href="./css/reset.css" type="text/css">
        <link rel="stylesheet" href="./css/styles.css" type="text/css">
        <title>scite Citation Statement Search</title>
@@ -25,6 +25,8 @@
        <meta property="twitter:title" content="scite Citation Statement Search">
        <meta property="twitter:description" content="scite Citation Statement Search">
        <meta property="twitter:site" content="@scite">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="./scripts/main.js"></script>
     </head>
 
     <body>
@@ -36,9 +38,10 @@
             <p class='centered subheader-text'>
                 scite Citation Statement Search lets you find evidence-based information from research articles about virtually any topic.
             </p>
-            <a href="https://scite.ai/search/citations" target="_blank" class='cta-btn'>
-                Start searching the literature
-            </a>
+            <div class='search-cta-wrapper'>
+                <input placeholder='Search the literature' class='cta-input' id='top-search-input' />
+                <img id='top-search-icon' class='search-icon' src='./images/search.svg' />
+            </div>
             <img class='scroll-icon' src="./images/scroll-down.svg"/>
         </section>
 
@@ -133,9 +136,11 @@
         </div>
 
         <section class='search-cs-container z-7 sticky-content-padding bg-lightgrey'>
-            <a href="https://scite.ai/search/citations" target="_blank" class='discover-cta-btn'>
-                Start searching the literature
-            </a>
+
+            <div class='search-cta-wrapper'>
+                <input placeholder='Search the literature' class='cta-input' id='bottom-search-input' />
+                <img id='bottom-search-icon' class='search-icon' src='./images/search.svg' />
+            </div>
         </section>
 
         <footer>
@@ -148,5 +153,4 @@
         </footer>
     </body>
  </html>
- 
- 
+

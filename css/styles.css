@@ -21,6 +21,10 @@ b {
     font-weight: 600;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .z-9 {
 	position: relative;
 	z-index: 9;
@@ -58,6 +62,16 @@ section.sticky-content-padding {
 
 section.sticky-title-padding {
 	padding-top: 9rem;
+}
+
+input:active {
+    border: none;
+    outline: none;
+}
+
+input:focus-visible {
+    border: none;
+    outline: none;
 }
 
 .bg-white {
@@ -144,16 +158,30 @@ section.sticky-title-padding {
     font-weight: 300;
 }
 
-.cta-btn {
-    padding: 0.75rem 1rem;
+.search-cta-wrapper {
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    background-color: white;
     border-radius: 8px;
+    padding-right: 0.5rem;
+}
+
+.cta-input {
+    padding: 0.75rem 1rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     color: black;
     background-color: white;
-    width: 15rem;
+    width: 20rem;
     margin: 0 auto;
     border: none;
     font-size: 1rem;
     text-align: center;
+}
+
+.search-icon:hover {
+    cursor: pointer;
 }
 
 .scroll-icon {
@@ -199,6 +227,9 @@ section.sticky-title-padding {
     }
     .scroll-icon {
         display: none;
+    }
+    .cta-input {
+        width: 80%;
     }
 }
 
