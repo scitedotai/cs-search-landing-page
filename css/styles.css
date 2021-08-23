@@ -163,11 +163,50 @@ section.sticky-title-padding {
     height: 2.5rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    .hero-text {
+        font-size: 4.4rem;
+        width: 95%;
+    }
+
+    .section-header {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .subheader-text {
+        width: 40rem;
+        margin: 2.5rem auto;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .hero-text {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+    .section-header {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .subheader-text {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .homepage-hero-container {
+        padding: 0 2rem;
+    }
+    .scroll-icon {
+        display: none;
+    }
+}
+
 
 /** CS Explainer Section Styling **/
 
 .cs-explainer-container {
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -178,7 +217,6 @@ section.sticky-title-padding {
 
 .citation-statement-wrapper {
     width: 65rem;
-    height: 16.5rem;
     margin: 2.5rem auto;
     padding: 1rem;
     display: flex;
@@ -211,20 +249,57 @@ section.sticky-title-padding {
     width: 33rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    .citation-statement-wrapper {
+        width: 100%;
+    }
+
+    .cs-img-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .citation-statement-copy-wrapper {
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width: 670px) {
+    .cs-explainer-img {
+        width: 100%;
+    }
+    .explainer-text {
+        font-size: 1.3rem;
+        padding: 0 0.5rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .citation-statement-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+}
+
 /** Search Science section styling **/
 
 .search-science-card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: row;
     padding: 1.5rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    gap: 1rem;
+    margin: 0 auto;
 }
 
 .search-science-card {
     border-radius: 1rem;
     padding: 2rem;
     background-color: white;
-    width: 24rem;
+    width: 23rem;
 }
 
 .card-header {
@@ -247,6 +322,39 @@ section.sticky-title-padding {
 .cs-result-img {
     width: 100%;
     margin-top: 2rem;
+    box-shadow: 0 0 1px rgba(0,0,0,.16),0 2px 4px rgba(0,0,0,.12);
+    padding: 4px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .search-science-card {
+        border-radius: 1rem;
+        padding: 2rem;
+        background-color: white;
+        margin: 1rem auto;
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .search-science-card {
+        border-radius: 1rem;
+        padding: 2rem;
+        background-color: white;
+        margin: 1rem auto;
+        width: 100%;
+    }
+    .card-example {
+        margin-top: 2rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .card-cta {
+        margin-top: 2rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
 }
 
 /** Discover container **/
