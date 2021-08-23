@@ -141,6 +141,7 @@ section.sticky-title-padding {
     margin-bottom: 2.5rem;
     font-size: 1.8rem;
     width: 40rem;
+    font-weight: 300;
 }
 
 .cta-btn {
@@ -195,6 +196,7 @@ section.sticky-title-padding {
     font-size: 1.5rem;
     width: 30rem;
     margin-top: 4rem;
+    font-weight: 300;
 }
 
 .cs-img-container {
