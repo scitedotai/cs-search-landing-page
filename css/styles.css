@@ -79,8 +79,13 @@ input:focus-visible {
     color: black;
 }
 
-.bg-purple {
-    background-color: #dadbf1;
+.bg-yellow {
+    background-color: #FAEFC5;
+    color: black;
+}
+
+.bg-lightgreen {
+    background-color: #E1F5E3;
     color: black;
 }
 
@@ -391,6 +396,7 @@ input:focus-visible {
 /** Discover container **/
 
 .search-cs-container {
+    padding-top: 4rem;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
