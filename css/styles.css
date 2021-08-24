@@ -224,17 +224,38 @@ input:focus-visible {
     }
     .subheader-text {
         font-size: 1.3rem;
-        width: 100%;
+        width: 95%;
     }
 
     .homepage-hero-container {
         padding: 0 2rem;
+        min-height: -webkit-fill-available;
     }
     .scroll-icon {
         display: none;
     }
     .cta-input {
         width: 80%;
+    }
+
+    .s-heading {
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 8rem 1rem 1rem 1rem;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
     }
 }
 
@@ -253,8 +274,7 @@ input:focus-visible {
 
 .citation-statement-wrapper {
     width: 65rem;
-    margin: 2.5rem auto;
-    padding: 1rem;
+    margin: 0 auto 4rem auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap-reverse;
@@ -288,6 +308,7 @@ input:focus-visible {
 @media only screen and (max-width: 1024px) {
     .citation-statement-wrapper {
         width: 100%;
+        padding: 0;
     }
 
     .cs-img-container {
@@ -397,9 +418,11 @@ input:focus-visible {
 
 .search-cs-container {
     padding-top: 4rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+}
+
+.search-cta-wrapper {
+    width: 25rem;
+    margin: 0rem auto 4rem auto;
 }
 
 .discover-cta-btn {
@@ -420,4 +443,13 @@ footer {
     padding: 1rem;
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 670px) {
+    .search-cta-wrapper {
+        width: 90%;
+    }
+    footer {
+        font-size: 0.55rem;
+    }
 }

@@ -6,7 +6,7 @@ $(document).ready(function(){
             );
         } else {
             window.open(
-                `https://scite.ai/search/citations?q=${term}&utm_campaign=cs_landing_page&utm_medium=generic&utm_source=cs_landing_page`
+                `https://scite.ai/search/citations?q=${encodeURIComponent(term)}&utm_campaign=cs_landing_page&utm_medium=generic&utm_source=cs_landing_page`
             );
         }
     }
