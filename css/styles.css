@@ -25,6 +25,10 @@ button:hover {
     cursor: pointer;
 }
 
+.link {
+    text-decoration: underline;
+}
+
 .z-9 {
 	position: relative;
 	z-index: 9;
